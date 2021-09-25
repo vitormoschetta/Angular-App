@@ -1,0 +1,24 @@
+<div class="uk-container">
+    <nav class="uk-navbar">
+        <div class="uk-navbar-letf">
+            <a routerLink="/home" class="uk-navbar-item uk-logo">Home</a>
+        </div>
+        <div class="uk-navbar-letf">
+            <a routerLink="/todo" class="uk-navbar-item uk-logo">Todo</a>
+        </div>
+        <div class="uk-navbar-letf">
+            <a routerLink="/other" class="uk-navbar-item uk-logo">Other</a>
+        </div>
+        <div *ngIf="currentUser; else visitante" class="uk-navbar-right">
+            <label class="uk-navbar-item uk-logo">{{currentUser.username}}</label>
+            <button class="uk-navbar-item uk-logo cursor-pointer" (click)="logout()">Sair</button>
+        </div>
+    </nav>
+</div>
+
+<ng-template #visitante>
+    <div class="uk-navbar-right">
+        <label class="uk-navbar-item uk-logo">Visiante</label>
+        <a routerLink="/login" class="uk-navbar-item uk-logo cursor-pointer">Login</a>
+    </div>
+</ng-template>

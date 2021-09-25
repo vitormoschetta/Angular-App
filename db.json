@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$HD.PuCQxw0TShtwZEx0kquBg1Ogv50i3SS5mpLfwuJGi4pyoSilWy",
+      "username": "admin",
+      "id": 1
+    }
+  ],
+  "todos": [
+    {
+      "title": "novo 2",
+      "done": true,
+      "id": 2
+    },
+    {
+      "title": "teste s",
+      "done": false,
+      "id": 3
+    },
+    {
+      "title": "teste",
+      "done": false,
+      "id": 4
+    }
+  ]
+}

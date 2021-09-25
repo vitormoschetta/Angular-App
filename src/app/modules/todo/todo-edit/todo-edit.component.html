@@ -1,0 +1,17 @@
+<div class="uk-container">    
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="uk-margin">
+            <input class="uk-input uk-form-width-large uk-form-large" type="text" formControlName="title" />
+        </div>
+
+        <div>
+            <button class="uk-button uk-button-secondary uk-button-large">
+                Confirm
+            </button>
+
+            <button class="uk-button uk-button-default uk-button-large uk-margin-left" routerLink="/todo">
+                Return
+            </button>
+        </div>
+    </form>
+</div>
